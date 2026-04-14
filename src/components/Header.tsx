@@ -60,28 +60,28 @@ const Header: React.FC = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden lg:flex items-center space-x-8">
-            <motion.a 
-              href="#" 
+            <motion.button 
               whileHover={{ y: -2 }}
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium flex items-center space-x-2"
+              type="button"
             >
               <Sparkles className="w-4 h-4" />
               <span>Explore</span>
-            </motion.a>
-            <motion.a 
-              href="#" 
+            </motion.button>
+            <motion.button 
               whileHover={{ y: -2 }}
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
+              type="button"
             >
               Categories
-            </motion.a>
-            <motion.a 
-              href="#" 
+            </motion.button>
+            <motion.button 
               whileHover={{ y: -2 }}
               className="text-gray-700 hover:text-purple-600 transition-colors font-medium"
+              type="button"
             >
               Contact
-            </motion.a>
+            </motion.button>
             
             {/* Language Selector */}
             <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30">
@@ -133,9 +133,9 @@ const Header: React.FC = () => {
                 <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-purple-600" />
               </div>
               
-              <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Explore</a>
-              <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Categories</a>
-              <a href="#" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</a>
+              <button type="button" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Explore</button>
+              <button type="button" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Categories</button>
+              <button type="button" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</button>
               
               <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30">
                 <Globe className="w-4 h-4 text-purple-600" />

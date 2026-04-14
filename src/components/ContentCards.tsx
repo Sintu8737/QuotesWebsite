@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Heart, Share2, Quote, Star, TrendingUp, Clock, User } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Heart, Share2, Quote, TrendingUp, Clock, User } from 'lucide-react';
 
 interface CardProps {
   id: number;
