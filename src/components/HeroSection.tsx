@@ -37,10 +37,17 @@ const HeroSection: React.FC = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  // useEffect(() => {
+  //   const timer = setInterval(nextSlide, 5000);
+  //   return () => clearInterval(timer);
+  // }, [nextSlide]);
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, [nextSlide]);
+  const timer = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, 5000);
+
+  return () => clearInterval(timer);
+}, [slides.length]);
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
